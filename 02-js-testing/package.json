@@ -1,0 +1,17 @@
+{
+  "name": "02-js-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "mocha": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "mocha": "^10.0.0"
+  }
+}
