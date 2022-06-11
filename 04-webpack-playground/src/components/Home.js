@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from './Title';
 
 
 const onAddButtonClick = (input, todoList) => {
@@ -6,12 +7,13 @@ const onAddButtonClick = (input, todoList) => {
 };
 
 
-const Home = () => {
+const Home = (props) => {
     const [inputTxt, setInputText] = useState('');
     const [todoList, setTodoList] = useState([]);
 
     return <div className='container'>
-        <h2>Home</h2>
+        <h2>Home</h2>&nbsp;<span>{props.version}</span>
+        <Title/>
         <hr />
 
         <label htmlFor="inputPassword5" className="form-label">Input</label>
