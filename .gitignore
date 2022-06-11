@@ -1,3 +1,5 @@
 node_modules
 .idea
 coverage
+dist
+100-html

@@ -1,3 +1,2 @@
 const { addTwoNumbers } = require('./calculator');
-
-console.log('addTwoNumber', addTwoNumbers(1, 2));
+const { formatCustomerName } = require('./util');
