@@ -1,8 +1,8 @@
 
-const Title = ()=>{
+const Title = ({ title }) => {
     return (
         <div>
-            Title of the page
+            {title || 'Title of the page'}
         </div>
     )
 }

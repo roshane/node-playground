@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title/> <Title/> should render default when not provided any title 1`] = `
+<div>
+  Title of the page
+</div>
+`;
+
+exports[`<Title/> <Title/> should render the correct text passed as props 1`] = `
+<div>
+  Hello 123
+</div>
+`;

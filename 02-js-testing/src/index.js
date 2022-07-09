@@ -1,2 +1,10 @@
-const { addTwoNumbers } = require('./calculator');
-const { formatCustomerName } = require('./util');
+import {addTwoNumbers} from "./calculator";
+import {formatCustomerName} from "./util";
+import {Customer} from "./entity";
+
+export {
+    addTwoNumbers,
+    formatCustomerName,
+    Customer
+
+}

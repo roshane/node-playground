@@ -1,0 +1,44 @@
+const Title = ({ title }) => {
+    return (
+        <div>
+            {title || 'Title of the page'}
+        </div>
+    )
+}
+
+export default Title;
+
+// import { useState } from 'react';
+
+// const [userList, setUserList] = useState();
+
+// const url = 'https://jsonplaceholder.typicode.com/users'
+
+// const fetchData = async () => {
+//     return await fetch(url)
+//         .then(response => response.json())
+// }
+
+// const loadUsers = () => {
+//     fetchData()
+//         .then(data => setUserList(data));
+// }
+
+// <div className='row'>
+//             <div className='col-md-4'>
+//                 <h4>user list </h4> <button onClick={loadUsers}>Refresh Users</button>
+//                 {
+//                     userList ? userList.map(user => {
+//                         return <div key={user.id}>
+//                             <pre>ID: {user.id}</pre>
+//                             <pre>Name: {user.name}</pre>
+//                             <pre>Email: {user.email}</pre>
+//                         </div>
+//                     }) : <p>Loading...</p>
+//                 }
+//             </div>
+
+//             <div className='col-md-8'>
+//                 {title || 'Title of the page'}
+//             </div>
+//         </div>

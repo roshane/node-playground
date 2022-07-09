@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserList/> <UserList/> should be emtpy initially 1`] = `
+Array [
+  <button
+    data-testid="btnRefresh"
+    onClick={[Function]}
+  >
+    Refresh
+  </button>,
+  <div
+    data-testid="userListView"
+  />,
+]
+`;
