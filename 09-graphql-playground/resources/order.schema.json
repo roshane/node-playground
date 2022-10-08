@@ -1,0 +1,85 @@
+{
+  "$schema" : "http://json-schema.org/draft-07/schema#",
+  "type" : "object",
+  "properties" : {
+    "customer" : {
+      "type" : [ "object", "null" ],
+      "properties" : {
+        "addressList" : {
+          "type" : [ "array", "null" ],
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "postalCode" : {
+                "type" : [ "string", "null" ],
+                "title" : "String"
+              },
+              "province" : {
+                "type" : [ "string", "null" ],
+                "title" : "String"
+              },
+              "street" : {
+                "type" : [ "string", "null" ],
+                "title" : "String"
+              },
+              "unitNumber" : {
+                "type" : [ "string", "null" ],
+                "title" : "String"
+              }
+            },
+            "required" : [ "postalCode", "province", "street" ],
+            "title" : "Address"
+          },
+          "title" : "List<Address>"
+        },
+        "firstName" : {
+          "type" : [ "string", "null" ],
+          "title" : "String"
+        },
+        "id" : {
+          "type" : [ "string", "null" ],
+          "title" : "String"
+        },
+        "lastName" : {
+          "type" : [ "string", "null" ],
+          "title" : "String"
+        }
+      },
+      "required" : [ "addressList", "firstName", "id", "lastName" ],
+      "title" : "Customer"
+    },
+    "deliveryDate" : {
+      "type" : [ "string", "null" ],
+      "title" : "LocalDateTime"
+    },
+    "id" : {
+      "type" : [ "string", "null" ],
+      "title" : "String"
+    },
+    "itemList" : {
+      "type" : [ "array", "null" ],
+      "items" : {
+        "type" : "object",
+        "properties" : {
+          "sku" : {
+            "type" : [ "string", "null" ],
+            "title" : "String"
+          },
+          "unitPrice" : {
+            "type" : [ "number", "null" ],
+            "title" : "BigDecimal"
+          }
+        },
+        "required" : [ "sku", "unitPrice" ],
+        "title" : "Item"
+      },
+      "title" : "List<Item>"
+    },
+    "orderDate" : {
+      "type" : [ "string", "null" ],
+      "title" : "LocalDateTime"
+    }
+  },
+  "required" : [ "customer", "deliveryDate", "id", "itemList", "orderDate" ],
+  "title" : "Order"
+}

@@ -61,7 +61,7 @@ class App extends React.Component {
           id="subscribeNews" name="subscribe" value="newsletter" />
 
         {
-          showButton && <button>click for fun</button>
+          showButton && <button>click for fun yeah</button>
         }
 
       </div>
