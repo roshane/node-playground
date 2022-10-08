@@ -20,7 +20,9 @@ const Display = () => {
                 setOtherCount(otherCount+1);
             }}>Increment</button>
             <hr />
-            {/* <LoginForm/> */}
+            <LoginForm/>
+            <pre>I want to break free</pre>
+            <pre>I want to break free from your lifestyle and sex and the star waze or need ah</pre>
         </div>
     );
 };
