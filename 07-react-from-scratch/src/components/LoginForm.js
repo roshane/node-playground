@@ -11,7 +11,7 @@ const LoginForm = ({ }) => {
     return (
         <>
             <input type="text" placeholder="User Name" onChange={onUserNameChange} />
-            <p data-testid="user-name-output">username: {userName}</p>
+            <p data-testid="user-name-output">{userName}</p>
         </>
     );
 }
